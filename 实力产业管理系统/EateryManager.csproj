@@ -1,0 +1,1117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65B8C05B-26CA-4EDA-8EA4-77C832DE3EC5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>实力产业管理系统</RootNamespace>
+    <AssemblyName>实力产业管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="microsoft.office.interop.excel">
+      <HintPath>..\..\..\Users\zhangye\Desktop\帮助视频\microsoft.office.interop.excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAdminForm.Designer.cs">
+      <DependentUpon>AddAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConsume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConsume.Designer.cs">
+      <DependentUpon>AddConsume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDepartment.Designer.cs">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductForm.Designer.cs">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPTypeForm.Designer.cs">
+      <DependentUpon>AddPTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRoomForm.Designer.cs">
+      <DependentUpon>AddRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStateFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStateFrom.Designer.cs">
+      <DependentUpon>AddStateFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTableForm.Designer.cs">
+      <DependentUpon>AddTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVGradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVGradeForm.Designer.cs">
+      <DependentUpon>AddVGradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVipForm.Designer.cs">
+      <DependentUpon>AddVipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWaiterFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWaiterFrom.Designer.cs">
+      <DependentUpon>AddWaiterFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWaiterLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWaiterLevel.Designer.cs">
+      <DependentUpon>AddWaiterLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckoutFrom.Designer.cs">
+      <DependentUpon>CheckoutFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConvertPinYi.cs" />
+    <Compile Include="CustomerBilling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerBilling.Designer.cs">
+      <DependentUpon>CustomerBilling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHpler.cs" />
+    <Compile Include="EmployeeInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeInForm.Designer.cs">
+      <DependentUpon>EmployeeInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcessiveFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcessiveFrom.Designer.cs">
+      <DependentUpon>ExcessiveFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export.cs" />
+    <Compile Include="LoginFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrom.Designer.cs">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaySafeFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaySafeFrom.Designer.cs">
+      <DependentUpon>PaySafeFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductForm.Designer.cs">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomForm.Designer.cs">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScheAddChanTaiDuledFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheAddChanTaiDuledFrom.Designer.cs">
+      <DependentUpon>ScheAddChanTaiDuledFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheAddDuledFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheAddDuledFrom.Designer.cs">
+      <DependentUpon>ScheAddDuledFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheDaoDaDuledFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheDaoDaDuledFrom.Designer.cs">
+      <DependentUpon>ScheDaoDaDuledFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduledFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduledFrom.Designer.cs">
+      <DependentUpon>ScheduledFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScheUpdateDuledFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheUpdateDuledFrom.Designer.cs">
+      <DependentUpon>ScheUpdateDuledFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignTheOrderFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignTheOrderFrom.Designer.cs">
+      <DependentUpon>SignTheOrderFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemForm.Designer.cs">
+      <DependentUpon>SystemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSettingsFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSettingsFrom.Designer.cs">
+      <DependentUpon>SystemSettingsFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TakeawayCheckoutFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakeawayCheckoutFrom.Designer.cs">
+      <DependentUpon>TakeawayCheckoutFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TakeawayFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakeawayFrom.Designer.cs">
+      <DependentUpon>TakeawayFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TakeawayLookFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TakeawayLookFrom.Designer.cs">
+      <DependentUpon>TakeawayLookFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimingFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimingFrom.Designer.cs">
+      <DependentUpon>TimingFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipsFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipsFrom.Designer.cs">
+      <DependentUpon>TipsFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAdminForm.Designer.cs">
+      <DependentUpon>UpdateAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateDepartment.Designer.cs">
+      <DependentUpon>UpdateDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProductForm.Designer.cs">
+      <DependentUpon>UpdateProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePTypeForm.Designer.cs">
+      <DependentUpon>UpdatePTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRoomForm.Designer.cs">
+      <DependentUpon>UpdateRoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTableForm.Designer.cs">
+      <DependentUpon>UpdateTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVGradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVGradeForm.Designer.cs">
+      <DependentUpon>UpdateVGradeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVipForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVipForm.Designer.cs">
+      <DependentUpon>UpdateVipForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateWaiteFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateWaiteFrom.Designer.cs">
+      <DependentUpon>UpdateWaiteFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateWaiterLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateWaiterLevel.Designer.cs">
+      <DependentUpon>UpdateWaiterLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipChonZhiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipChonZhiForm.Designer.cs">
+      <DependentUpon>VipChonZhiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipManagerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipManagerForm.Designer.cs">
+      <DependentUpon>VipManagerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VipzhuanzhangForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VipzhuanzhangForm.Designer.cs">
+      <DependentUpon>VipzhuanzhangForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaiterLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaiterLevel.Designer.cs">
+      <DependentUpon>WaiterLevel.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAdminForm.resx">
+      <DependentUpon>AddAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConsume.resx">
+      <DependentUpon>AddConsume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDepartment.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProductForm.resx">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPTypeForm.resx">
+      <DependentUpon>AddPTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRoomForm.resx">
+      <DependentUpon>AddRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStateFrom.resx">
+      <DependentUpon>AddStateFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTableForm.resx">
+      <DependentUpon>AddTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVGradeForm.resx">
+      <DependentUpon>AddVGradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVipForm.resx">
+      <DependentUpon>AddVipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWaiterFrom.resx">
+      <DependentUpon>AddWaiterFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWaiterLevel.resx">
+      <DependentUpon>AddWaiterLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutFrom.resx">
+      <DependentUpon>CheckoutFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerBilling.resx">
+      <DependentUpon>CustomerBilling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeInForm.resx">
+      <DependentUpon>EmployeeInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcessiveFrom.resx">
+      <DependentUpon>ExcessiveFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrom.resx">
+      <DependentUpon>LoginFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaySafeFrom.resx">
+      <DependentUpon>PaySafeFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductForm.resx">
+      <DependentUpon>ProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RoomForm.resx">
+      <DependentUpon>RoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheAddChanTaiDuledFrom.resx">
+      <DependentUpon>ScheAddChanTaiDuledFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheAddDuledFrom.resx">
+      <DependentUpon>ScheAddDuledFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheDaoDaDuledFrom.resx">
+      <DependentUpon>ScheDaoDaDuledFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduledFrom.resx">
+      <DependentUpon>ScheduledFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheUpdateDuledFrom.resx">
+      <DependentUpon>ScheUpdateDuledFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignTheOrderFrom.resx">
+      <DependentUpon>SignTheOrderFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemForm.resx">
+      <DependentUpon>SystemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSettingsFrom.resx">
+      <DependentUpon>SystemSettingsFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakeawayCheckoutFrom.resx">
+      <DependentUpon>TakeawayCheckoutFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakeawayFrom.resx">
+      <DependentUpon>TakeawayFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TakeawayLookFrom.resx">
+      <DependentUpon>TakeawayLookFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimingFrom.resx">
+      <DependentUpon>TimingFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipsFrom.resx">
+      <DependentUpon>TipsFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateAdminForm.resx">
+      <DependentUpon>UpdateAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateDepartment.resx">
+      <DependentUpon>UpdateDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProductForm.resx">
+      <DependentUpon>UpdateProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePTypeForm.resx">
+      <DependentUpon>UpdatePTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRoomForm.resx">
+      <DependentUpon>UpdateRoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTableForm.resx">
+      <DependentUpon>UpdateTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVGradeForm.resx">
+      <DependentUpon>UpdateVGradeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVipForm.resx">
+      <DependentUpon>UpdateVipForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWaiteFrom.resx">
+      <DependentUpon>UpdateWaiteFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateWaiterLevel.resx">
+      <DependentUpon>UpdateWaiterLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipChonZhiForm.resx">
+      <DependentUpon>VipChonZhiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipManagerForm.resx">
+      <DependentUpon>VipManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VipzhuanzhangForm.resx">
+      <DependentUpon>VipzhuanzhangForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaiterLevel.resx">
+      <DependentUpon>WaiterLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\宾客结账.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\宾客结账-背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单栏-背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初始化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关于背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\箭头图片.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\结账按钮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\快餐外卖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置窗体背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索会员.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加消费按钮.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加消费-背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\状态背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-72.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-82.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-92.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-112.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-122.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-132.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logos1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting-91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-71.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-81.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\宾客结账1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\宾客结账-背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单栏-背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初始化1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登录1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关于背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\箭头图片1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\结账按钮1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\快餐外卖1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置窗体背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索会员1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\预定-61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加消费按钮1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加消费-背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\状态背景1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\菜单栏-背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\工具栏-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\状态背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\状态背景3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\状态背景4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t-42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景-22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置窗体背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-93.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\初始化2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\登录2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logos2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\增加消费按钮2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\关闭按钮6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\快餐外卖2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\宾客结账-背景2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\按钮背景5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\设置窗体背景3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\搜索会员2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hy-23.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
